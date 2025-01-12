@@ -4,6 +4,7 @@ Class Position:
     possible_letters = [a-z]
 
 Class Word
+    positions = [] (length = 5)
     length = 5
 
 Algorithm:
