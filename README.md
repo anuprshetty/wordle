@@ -15,7 +15,7 @@ A word guessing game.
 
 ## Pseudocode
 
-- [Wordle APIs](./wordle_api.http)
+- [Wordle APIs testing](./wordle_api.http)
 - [Pseudocode](./pseudocode.pseudo)
 
 ## Remarks
