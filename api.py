@@ -10,7 +10,12 @@ class API:
         url = "/daily"
         parameters = {"guess": word, "size": config.word_length}
 
-        return requests.get(
+        response = requests.get(
             f"{API.backend_server}{url}",
             params=parameters,
-        ).json()
+        )
+
+        if response.status_code != 200:
+            raise Exception(f"API call error: {response.reason}")
+        else:
+            return response.json()
