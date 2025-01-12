@@ -27,4 +27,4 @@ A word guessing game.
 
 - [Wordle website](https://www.nytimes.com/games/wordle/index.html)
 - [My github repositories](https://github.com/anuprshetty?tab=repositories)
-- [Little bit of internet search for syntax](www.google.com)
+- [Little bit of internet search for syntax](https://www.google.com)
