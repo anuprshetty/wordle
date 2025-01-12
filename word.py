@@ -28,7 +28,7 @@ class Word:
             letter = letter_info["guess"]
             status = letter_info["result"]
 
-            if status == LetterStatus.CURRECT:
+            if status == LetterStatus.CORRECT:
                 self.positions[slot].possible_letters = set(letter)
             elif status == LetterStatus.ABSENT:
                 for position in self.positions:
@@ -40,7 +40,7 @@ class Word:
         word_guessed = True
         for letter_info in feedback:
             status = letter_info["result"]
-            if status != LetterStatus.CURRECT:
+            if status != LetterStatus.CORRECT:
                 word_guessed = False
                 break
 
