@@ -1,0 +1,19 @@
+Wordle Game:
+
+Class Position:
+    possible_letters = [a-z]
+
+Class Word
+    length = 5
+
+Algorithm:
+loop (upper limit to end the loop = 6):
+    word = start with random letters
+    Make API call (daily API)
+    3 cases:
+    1. if correct: for this position, possible_letters = [correct_letter]
+    2. if absent: for each positions, remove absent_letter from possible_letters
+    3. if present: for this position, remove absent_letter from possible_letters
+
+    word = update the word with each position's possible_letters
+    continue the loop
