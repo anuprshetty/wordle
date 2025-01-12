@@ -1,0 +1,31 @@
+###################### REST API Design ######################
+# Documentation --> https://marketplace.visualstudio.com/items?itemName=humao.rest-client ("REST Client" VS code extension).
+
+@wordle_server=https://wordle.votee.dev:8000
+
+curl {{wordle_server}}/wordseg \
+  -X POST \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "accept: application/json" \
+  --data "text=laser beam"
+
+
+### --> delimiter for each request.
+
+curl "{{wordle_server}}/daily?guess=laser&size=5" \
+  -X GET \
+  -H "accept: application/json"
+
+
+###
+
+curl "{{wordle_server}}/random?guess=laser&size=5&seed=10" \
+  -X GET \
+  -H "accept: application/json"
+
+
+###
+
+curl "{{wordle_server}}/word/laser?guess=razor" \
+  -X GET \
+  -H "accept: application/json"
