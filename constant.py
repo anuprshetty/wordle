@@ -1,4 +1,4 @@
 class LetterStatus:
-    CURRECT = "currect"
+    CURRECT = "correct"
     ABSENT = "absent"
     PRESENT = "present"
