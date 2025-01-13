@@ -10,7 +10,7 @@ A word guessing game.
 ## How To Run
 
 - command --> poetry install
-- command --> . venv/bin/activate
+- command --> . .venv/bin/activate
 - python main.py
 
 ## Pseudocode
