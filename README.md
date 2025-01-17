@@ -9,19 +9,12 @@ A word guessing game.
 
 ## How To Run
 
-- command --> poetry install
-- command --> . .venv/bin/activate
-- python main.py
+- [Commands](./.vscode/tasks.json)
 
 ## Pseudocode
 
 - [Wordle APIs testing](./wordle_api.http)
 - [Pseudocode](./pseudocode.pseudo)
-
-## Remarks
-
-- Game is working as expected.
-- It took me a 1 hour of extra time to fix a bug (bug: simple typo in constant.LetterStatus.CORRECT) and some final wrapup things.
 
 ## References
 
